@@ -1,0 +1,180 @@
+/* --- Gaya Umum Halaman --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    color: #2f3640;
+    line-height: 1.6;
+}
+
+/* --- Header --- */
+header {
+    background-color: #1e272e; /* Warna gelap elegan khas photography */
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header .tagline {
+    margin-top: 5px;
+    font-style: italic;
+    color: #dcdde1;
+    font-size: 14px;
+}
+
+/* --- Navigasi --- */
+nav {
+    background-color: #2f3640;
+    text-align: center;
+    padding: 12px 0;
+}
+
+nav a {
+    color: #f5f6fa;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e1b12c; /* Warna aksen emas */
+}
+
+/* Styling Khusus Tombol Booking */
+nav a.nav-booking {
+    background-color: #e1b12c;
+    color: #1e272e;
+    padding: 6px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a.nav-booking:hover {
+    background-color: #fbc531;
+    color: #000000;
+}
+
+/* --- Konten Utama --- */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #1e272e;
+    border-bottom: 2px solid #e1b12c;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+}
+
+/* Seksi Layanan / Grid Photography */
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.service-card {
+    flex: 1 1 calc(33.333% - 15px); /* Menampilkan 3 kartu per baris */
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    padding: 18px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    color: #2f3640;
+    font-size: 18px;
+    border-bottom: 1px solid #e1b12c;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.service-card .description {
+    font-size: 13px;
+    color: #718093;
+    margin: 10px 0;
+}
+
+.service-card .price {
+    font-weight: bold;
+    color: #e1b12c;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* Seksi Promo/Event */
+.event-article {
+    background-color: #fef9e7;
+    border-left: 5px solid #e1b12c;
+    padding: 15px 20px;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #2f3640;
+}
+
+/* Seksi Alamat & Kontak */
+address {
+    font-style: normal;
+    background-color: #f8f9fa;
+    border: 1px dashed #718093;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+address a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    background-color: #1e272e;
+    color: #dcdde1;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Penyesuaian Responsif untuk Layar Kecil (HP) */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 100%;
+    }
+}
